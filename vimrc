@@ -66,7 +66,8 @@ filetype indent on
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 if has("gui_running")
-    colorscheme wombat
+    set background=dark
+    colorscheme solarized
 
     set gcr=a:blinkon0 " no blinking cursor
     set guioptions-=T " disable toolbar
@@ -83,3 +84,8 @@ if has("gui_running")
         set gfn=Bitstream\ Vera\ Sans\ Mono:h12
     endif
 endif
+
+" clang_complete
+let g:clang_complete_auto=0
+let g:clang_complete_copen=1
+let g:clang_snippets_engine="snipmate"
