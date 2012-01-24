@@ -76,7 +76,7 @@ if has("gui_running")
 
     if has("macunix")
         set gfn=Monaco:h14
-    elseif has("windows")
+    elseif has("win32") || has("win64")
         set gfn=Consolas:h14
     else
         set gfn=Bitstream\ Vera\ Sans\ Mono:h12
