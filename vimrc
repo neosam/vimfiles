@@ -2,6 +2,7 @@
 " by chrizel <chrizel@gmail.com>
 
 call pathogen#infect()
+call pathogen#helptags()
 
 set encoding=utf-8
 set autoindent
