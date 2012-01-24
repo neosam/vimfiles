@@ -1,6 +1,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
+	url = https://github.com/wincent/Command-T.git
 [submodule "bundle/sqlutilities"]
 	path = bundle/sqlutilities
 	url = https://github.com/vim-scripts/SQLUtilities.git
