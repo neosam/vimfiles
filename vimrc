@@ -67,7 +67,6 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 
 if has("gui_running")
     colorscheme wombat
-    set lines=40 columns=80
 
     set gcr=a:blinkon0 " no blinking cursor
     set guioptions-=T " disable toolbar
@@ -79,6 +78,7 @@ if has("gui_running")
         set gfn=Monaco:h14
     elseif has("win32") || has("win64")
         set gfn=Consolas:h14
+        set lines=40 columns=80
     else
         set gfn=Bitstream\ Vera\ Sans\ Mono:h12
     endif
