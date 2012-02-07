@@ -25,6 +25,10 @@ set nowritebackup
 set hidden
 set list listchars=tab:»·,trail:·
 
+" Window to comma mapping
+map , <C-w>
+map ,, <C-w><C-w>
+
 syntax on
 
 set ts=4 et sw=4 sta sts=4
@@ -89,3 +93,5 @@ endif
 let g:clang_complete_auto=0
 let g:clang_complete_copen=1
 let g:clang_snippets_engine="snipmate"
+
+au BufWritePost *.coffee silent CoffeeMake! -b
