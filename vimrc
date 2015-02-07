@@ -1,8 +1,9 @@
 " .vimrc
 " by chrizel <chrizel@gmail.com>
+" some changes by neosam <neosam@posteo.de>
 
-call pathogen#infect()
-call pathogen#helptags()
+" call pathogen#infect()
+" call pathogen#helptags()
 
 set encoding=utf-8
 set autoindent
@@ -95,3 +96,8 @@ let g:clang_complete_copen=1
 let g:clang_snippets_engine="snipmate"
 
 au BufWritePost *.coffee silent CoffeeMake! -b
+
+" 80 column settings
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%80v.\+/
+set colorcolumn=80
